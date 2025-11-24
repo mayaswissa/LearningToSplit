@@ -1,0 +1,186 @@
+[] ex=acas_property_2.txt net=ACASXU_experimental_v2a_1_4.onnx …
+[48] processing acas_property_2.txt …
+start run time: 14:13:18
+Network: /cs/labs/guykatz/maya.swisa/elbit/20_8/Marabou/resources/onnx/acasxu/ACASXU_experimental_v2a_1_4.onnx
+Property: /cs/labs/guykatz/maya.swisa/elbit/20_8/Marabou/resources/properties/acas_property_2.txt
+
+Engine::processInputQuery: Input query (before preprocessing): 314 equations, 615 variables
+Engine::processInputQuery: Input query (after preprocessing): 604 equations, 919 variables
+
+
+Engine::solve: Initial statistics
+
+14:13:18 Statistics update:
+	--- Time Statistics ---
+	Total time elapsed: 94 milli (00:00:00)
+		Main loop: 0 milli (00:00:00)
+		Preprocessing time: 50 milli (00:00:00)
+		Unknown: 43 milli (00:00:00)
+	Breakdown for main loop:
+		[0.00%] Simplex steps: 0 milli
+		[0.00%] Explicit-basis bound tightening: 0 milli
+		[0.00%] Constraint-matrix bound tightening: 0 milli
+		[0.00%] Degradation checking: 0 milli
+		[0.00%] Precision restoration: 0 milli
+		[0.00%] Statistics handling: 0 milli
+		[0.00%] Constraint-fixing steps: 0 milli
+		[0.00%] Valid case splits: 1 milli. Average per split: 0.00 milli
+		[0.00%] Applying stored bound-tightening: 0 milli
+		[0.00%] SMT core: 0 milli
+		[0.00%] Symbolic Bound Tightening: 8 milli
+		[0.00%] SoI-based local search: 0 milli
+		[0.00%] SoI-based local search: 0 milli
+		[0.00%] Unaccounted for: 0 milli
+	--- Preprocessor Statistics ---
+	Number of preprocessor bound-tightening loop iterations: 8
+	Number of eliminated variables: 0
+	Number of constraints removed due to variable elimination: 0
+	Number of equations removed due to variable elimination: 0
+	--- Engine Statistics ---
+	Number of main loop iterations: 1
+		0 iterations were simplex steps. Total time: 0 milli. Average: 0.00 milli.
+		0 iterations were constraint-fixing steps. Total time: 0 milli. Average: 0.00 milli
+	Number of active piecewise-linear constraints: 257 / 300
+		Constraints disabled by valid splits: 43. By SMT-originated splits: 0
+	Last reported degradation: 0.0000000000. Max degradation so far: 0.0000000000. Restorations so far: 0
+	Number of simplex pivots we attempted to skip because of instability: 0.
+	Unstable pivots performed anyway: 0
+	--- Tableau Statistics ---
+	Total number of pivots performed: 0
+		Real pivots: 0. Degenerate: 0 (0.00%)
+		Degenerate pivots by request (e.g., to fix a PL constraint): 0 (0.00%)
+		Average time per pivot: 0.00 milli
+	Total number of fake pivots performed: 0
+	Total number of rows added: 0. Number of merged columns: 0
+	Current tableau dimensions: M = 604, N = 1523
+	--- SMT Core Statistics ---
+	Total depth is 0. Total visited states: 1. Number of splits: 0. Number of pops: 0
+	Max stack depth: 0
+	--- Bound Tightening Statistics ---
+	Number of tightened bounds: 0.
+		Number of rows examined by row tightener: 0. Consequent tightenings: 0
+		Number of explicit basis matrices examined by row tightener: 0. Consequent tightenings: 0
+		Number of bound tightening rounds on the entire constraint matrix: 0. Consequent tightenings: 0
+		Number of bound notifications sent to PL constraints: 1800. Tightenings proposed: 0
+	--- Basis Factorization statistics ---
+	Number of basis refactorizations: 2
+	--- Projected Steepest Edge Statistics ---
+	Number of iterations: 0.
+	Number of resets to reference space: 1. Avg. iterations per reset: 0
+	--- SBT ---
+	Number of tightened bounds: 751
+	--- SoI-based local search ---
+	Number of proposed phase pattern update: 0. Number of accepted update: 0 [0.00%]
+	Total time (% of local search time) updating SoI phase pattern : 0 milli [0.00%]
+	Total time obtaining current assignment: 0 milli [0.00%]
+	Total time getting SoI phase pattern : 0 milli [0.00%]
+	--- Context dependent statistics ---
+	Number of pushes / pops: 0 / 0
+		[0.00%] Pre-Push hook: 0 milli
+		[0.00%] Push : 0 milli
+		[0.00%] Post-Pop hook: 0 milli
+		[0.00%] Pop : 0 milli
+		[0.00%] Total context-switching time: 0 milli
+	--- Proof Certificate ---
+	Number of certified leaves: 0
+	Number of leaves to delegate: 0
+	Number of lemmas: 0
+
+---
+start solving without an agent
+Performing precision restoration. Degradation before: 0.002570527785602. After: 0.000000000000119
+Performing precision restoration. Degradation before: 0.005781109057673. After: 0.000000000000133
+
+Engine::solve: sat assignment found
+
+14:29:11 Statistics update:
+	--- Time Statistics ---
+	Total time elapsed: 953570 milli (00:15:53)
+		Main loop: 953364 milli (00:15:53)
+		Preprocessing time: 50 milli (00:00:00)
+		Unknown: 156 milli (00:00:00)
+	Breakdown for main loop:
+		[34.71%] Simplex steps: 330954 milli
+		[8.01%] Explicit-basis bound tightening: 76382 milli
+		[0.00%] Constraint-matrix bound tightening: 0 milli
+		[0.15%] Degradation checking: 1423 milli
+		[0.00%] Precision restoration: 28 milli
+		[0.07%] Statistics handling: 629 milli
+		[0.00%] Constraint-fixing steps: 0 milli
+		[0.30%] Valid case splits: 2819 milli. Average per split: 0.00 milli
+		[0.08%] Applying stored bound-tightening: 771 milli
+		[3.90%] SMT core: 37172 milli
+		[43.47%] Symbolic Bound Tightening: 414447 milli
+		[28.98%] SoI-based local search: 276253 milli
+		[0.00%] SoI-based local search: 0 milli
+		[9.31%] Unaccounted for: 88734 milli
+	--- Preprocessor Statistics ---
+	Number of preprocessor bound-tightening loop iterations: 8
+	Number of eliminated variables: 0
+	Number of constraints removed due to variable elimination: 0
+	Number of equations removed due to variable elimination: 0
+	--- Engine Statistics ---
+	Number of main loop iterations: 498615
+		447688 iterations were simplex steps. Total time: 330954 milli. Average: 0.74 milli.
+		0 iterations were constraint-fixing steps. Total time: 0 milli. Average: 0.00 milli
+	Number of active piecewise-linear constraints: 119 / 300
+		Constraints disabled by valid splits: 165. By SMT-originated splits: 16
+	Last reported degradation: 0.0000000000. Max degradation so far: 0.0057577420. Restorations so far: 2
+	Number of simplex pivots we attempted to skip because of instability: 116.
+	Unstable pivots performed anyway: 9
+	--- Tableau Statistics ---
+	Total number of pivots performed: 280726
+		Real pivots: 278077. Degenerate: 2649 (0.94%)
+		Degenerate pivots by request (e.g., to fix a PL constraint): 0 (0.00%)
+		Average time per pivot: 0.10 milli
+	Total number of fake pivots performed: 43595
+	Total number of rows added: 0. Number of merged columns: 0
+	Current tableau dimensions: M = 604, N = 1523
+	--- SMT Core Statistics ---
+	Total depth is 20. Total visited states: 43739. Number of splits: 21877. Number of pops: 21861
+	Max stack depth: 89
+	--- Bound Tightening Statistics ---
+	Number of tightened bounds: 5514259.
+		Number of rows examined by row tightener: 280726. Consequent tightenings: 111232
+		Number of explicit basis matrices examined by row tightener: 4148. Consequent tightenings: 1187893
+		Number of bound tightening rounds on the entire constraint matrix: 0. Consequent tightenings: 0
+		Number of bound notifications sent to PL constraints: 9753757. Tightenings proposed: 0
+	--- Basis Factorization statistics ---
+	Number of basis refactorizations: 1926
+	--- Projected Steepest Edge Statistics ---
+	Number of iterations: 324428.
+	Number of resets to reference space: 21888. Avg. iterations per reset: 14
+	--- SBT ---
+	Number of tightened bounds: 5508918
+	--- SoI-based local search ---
+	Number of proposed phase pattern update: 27935. Number of accepted update: 42785 [153.16%]
+	Total time (% of local search time) updating SoI phase pattern : 3160752 milli [1.14%]
+	Total time obtaining current assignment: 11563665 milli [4.19%]
+	Total time getting SoI phase pattern : 656010 milli [0.07%]
+	--- Context dependent statistics ---
+	Number of pushes / pops: 43740 / 43720
+		[0.15%] Pre-Push hook: 1407 milli
+		[0.00%] Push : 0 milli
+		[0.15%] Post-Pop hook: 1465 milli
+		[0.09%] Pop : 869 milli
+		[0.39%] Total context-switching time: 3743 milli
+	--- Proof Certificate ---
+	Number of certified leaves: 0
+	Number of leaves to delegate: 0
+	Number of lemmas: 0
+sat
+Input assignment:
+	x0 = 0.600000
+	x1 = -0.001344
+	x2 = -0.434718
+	x3 = 0.500000
+	x4 = -0.459871
+
+Output:
+	y0 = -0.017620
+	y1 = -0.019550
+	y2 = -0.017926
+	y3 = -0.018859
+	y4 = -0.017620
+
+end run time: 14:29:11

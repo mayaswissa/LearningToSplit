@@ -1,0 +1,291 @@
+[] ex=acas_property_1.txt net=ACASXU_experimental_v2a_2_8.onnx …
+[16] processing acas_property_1.txt …
+start run time: 14:37:26
+Network: /cs/labs/guykatz/maya.swisa/elbit/20_8/Marabou/resources/onnx/acasxu/ACASXU_experimental_v2a_2_8.onnx
+Property: /cs/labs/guykatz/maya.swisa/elbit/20_8/Marabou/resources/properties/acas_property_1.txt
+
+Engine::processInputQuery: Input query (before preprocessing): 310 equations, 615 variables
+Engine::processInputQuery: Input query (after preprocessing): 605 equations, 915 variables
+
+
+Engine::solve: Initial statistics
+
+14:37:26 Statistics update:
+	--- Time Statistics ---
+	Total time elapsed: 72 milli (00:00:00)
+		Main loop: 0 milli (00:00:00)
+		Preprocessing time: 44 milli (00:00:00)
+		Unknown: 27 milli (00:00:00)
+	Breakdown for main loop:
+		[0.00%] Simplex steps: 0 milli
+		[0.00%] Explicit-basis bound tightening: 0 milli
+		[0.00%] Constraint-matrix bound tightening: 0 milli
+		[0.00%] Degradation checking: 0 milli
+		[0.00%] Precision restoration: 0 milli
+		[0.00%] Statistics handling: 0 milli
+		[0.00%] Constraint-fixing steps: 0 milli
+		[0.00%] Valid case splits: 0 milli. Average per split: 0.00 milli
+		[0.00%] Applying stored bound-tightening: 0 milli
+		[0.00%] SMT core: 0 milli
+		[0.00%] Symbolic Bound Tightening: 6 milli
+		[0.00%] SoI-based local search: 0 milli
+		[0.00%] SoI-based local search: 0 milli
+		[0.00%] Unaccounted for: 0 milli
+	--- Preprocessor Statistics ---
+	Number of preprocessor bound-tightening loop iterations: 9
+	Number of eliminated variables: 0
+	Number of constraints removed due to variable elimination: 0
+	Number of equations removed due to variable elimination: 0
+	--- Engine Statistics ---
+	Number of main loop iterations: 1
+		0 iterations were simplex steps. Total time: 0 milli. Average: 0.00 milli.
+		0 iterations were constraint-fixing steps. Total time: 0 milli. Average: 0.00 milli
+	Number of active piecewise-linear constraints: 280 / 300
+		Constraints disabled by valid splits: 20. By SMT-originated splits: 0
+	Last reported degradation: 0.0000000000. Max degradation so far: 0.0000000000. Restorations so far: 0
+	Number of simplex pivots we attempted to skip because of instability: 0.
+	Unstable pivots performed anyway: 0
+	--- Tableau Statistics ---
+	Total number of pivots performed: 0
+		Real pivots: 0. Degenerate: 0 (0.00%)
+		Degenerate pivots by request (e.g., to fix a PL constraint): 0 (0.00%)
+		Average time per pivot: 0.00 milli
+	Total number of fake pivots performed: 0
+	Total number of rows added: 0. Number of merged columns: 0
+	Current tableau dimensions: M = 605, N = 1520
+	--- SMT Core Statistics ---
+	Total depth is 0. Total visited states: 1. Number of splits: 0. Number of pops: 0
+	Max stack depth: 0
+	--- Bound Tightening Statistics ---
+	Number of tightened bounds: 0.
+		Number of rows examined by row tightener: 0. Consequent tightenings: 0
+		Number of explicit basis matrices examined by row tightener: 0. Consequent tightenings: 0
+		Number of bound tightening rounds on the entire constraint matrix: 0. Consequent tightenings: 0
+		Number of bound notifications sent to PL constraints: 1800. Tightenings proposed: 0
+	--- Basis Factorization statistics ---
+	Number of basis refactorizations: 2
+	--- Projected Steepest Edge Statistics ---
+	Number of iterations: 0.
+	Number of resets to reference space: 1. Avg. iterations per reset: 0
+	--- SBT ---
+	Number of tightened bounds: 753
+	--- SoI-based local search ---
+	Number of proposed phase pattern update: 0. Number of accepted update: 0 [0.00%]
+	Total time (% of local search time) updating SoI phase pattern : 0 milli [0.00%]
+	Total time obtaining current assignment: 0 milli [0.00%]
+	Total time getting SoI phase pattern : 0 milli [0.00%]
+	--- Context dependent statistics ---
+	Number of pushes / pops: 0 / 0
+		[0.00%] Pre-Push hook: 0 milli
+		[0.00%] Push : 0 milli
+		[0.00%] Post-Pop hook: 0 milli
+		[0.00%] Pop : 0 milli
+		[0.00%] Total context-switching time: 0 milli
+	--- Proof Certificate ---
+	Number of certified leaves: 0
+	Number of leaves to delegate: 0
+	Number of lemmas: 0
+
+---
+start solving without an agent
+MalformedBasisException caught!
+Performing precision restoration. Degradation before: 0.000998826563613. After: 0.000000000001175
+MalformedBasisException caught!
+Performing precision restoration. Degradation before: 0.000000660722694. After: 0.000000000000188
+MalformedBasisException caught!
+Performing precision restoration. Degradation before: 0.000083984084842. After: 0.000000000000679
+MalformedBasisException caught!
+Performing precision restoration. Degradation before: 0.000000106802104. After: 0.000000000000078
+High degradation found!
+Performing precision restoration. Degradation before: 0.216659627671889. After: 0.000000000009353
+MalformedBasisException caught!
+Performing precision restoration. Degradation before: 0.000127904400458. After: 0.000000000000464
+MalformedBasisException caught!
+Performing precision restoration. Degradation before: 0.000006804988384. After: 0.000000000000106
+High degradation found!
+Performing precision restoration. Degradation before: 0.145076157044870. After: 0.000000000046737
+MalformedBasisException caught!
+Performing precision restoration. Degradation before: 0.000054004512888. After: 0.000000000000562
+MalformedBasisException caught!
+Performing precision restoration. Degradation before: 0.000080526261835. After: 0.000000000000226
+MalformedBasisException caught!
+Performing precision restoration. Degradation before: 0.000000033674523. After: 0.000000000000263
+MalformedBasisException caught!
+Performing precision restoration. Degradation before: 0.018878834169976. After: 0.000000000000348
+MalformedBasisException caught!
+Performing precision restoration. Degradation before: 0.000001403618441. After: 0.000000000000708
+Performing precision restoration. Degradation before: 0.011608081300602. After: 0.000000000247970
+MalformedBasisException caught!
+Performing precision restoration. Degradation before: 0.000008918787387. After: 0.000000000000104
+MalformedBasisException caught!
+Performing precision restoration. Degradation before: 0.000000239366411. After: 0.000000000000270
+MalformedBasisException caught!
+Performing precision restoration. Degradation before: 0.000200063629782. After: 0.000000000000071
+High degradation found!
+Performing precision restoration. Degradation before: 0.111871333917525. After: 0.000000000051764
+High degradation found!
+Performing precision restoration. Degradation before: 147.981867619346303. After: 0.000000000000006
+High degradation found!
+Performing precision restoration. Degradation before: 0.137845002382763. After: 0.000000000034059
+High degradation found!
+Performing precision restoration. Degradation before: 0.141077295318312. After: 0.000000000021890
+High degradation found!
+Performing precision restoration. Degradation before: 2.255322052274040. After: 0.000000000045508
+High degradation found!
+Performing precision restoration. Degradation before: 0.646871694601073. After: 0.000000000003698
+Performing precision restoration. Degradation before: 0.003401933979743. After: 0.000000000056017
+MalformedBasisException caught!
+Performing precision restoration. Degradation before: 0.000114572830462. After: 0.000000000000095
+High degradation found!
+Performing precision restoration. Degradation before: 0.591841891719222. After: 0.000000000020885
+High degradation found!
+Performing precision restoration. Degradation before: 119.411435095438989. After: 0.000000000116503
+MalformedBasisException caught!
+Performing precision restoration. Degradation before: 0.000000080416912. After: 0.000000000000750
+High degradation found!
+Performing precision restoration. Degradation before: 0.256182198053089. After: 0.000000000011349
+High degradation found!
+Performing precision restoration. Degradation before: 0.176628532205266. After: 0.000000000006647
+MalformedBasisException caught!
+Performing precision restoration. Degradation before: 0.000000197026938. After: 0.000000000000085
+MalformedBasisException caught!
+Performing precision restoration. Degradation before: 0.000029570908174. After: 0.000000000000896
+High degradation found!
+Performing precision restoration. Degradation before: 0.260025875743968. After: 0.000000000026107
+MalformedBasisException caught!
+Performing precision restoration. Degradation before: 0.000330512798251. After: 0.000000000000256
+MalformedBasisException caught!
+Performing precision restoration. Degradation before: 0.000035127713481. After: 0.000000000000152
+MalformedBasisException caught!
+Performing precision restoration. Degradation before: 0.000128514310935. After: 0.000000000000065
+Performing precision restoration. Degradation before: 0.000072144726655. After: 0.000000000016844
+MalformedBasisException caught!
+Performing precision restoration. Degradation before: 0.028663749592363. After: 0.000000000000462
+MalformedBasisException caught!
+Performing precision restoration. Degradation before: 0.001041080985578. After: 0.000000000000075
+MalformedBasisException caught!
+Performing precision restoration. Degradation before: 0.000001673845383. After: 0.000000000000076
+MalformedBasisException caught!
+Performing precision restoration. Degradation before: 0.000000015084422. After: 0.000000000000462
+MalformedBasisException caught!
+Performing precision restoration. Degradation before: 0.000000247238118. After: 0.000000000000075
+MalformedBasisException caught!
+Performing precision restoration. Degradation before: 0.000000001893791. After: 0.000000000000076
+MalformedBasisException caught!
+Performing precision restoration. Degradation before: 0.000000115956349. After: 0.000000000000076
+MalformedBasisException caught!
+Performing precision restoration. Degradation before: 0.000001386101656. After: 0.000000000000076
+MalformedBasisException caught!
+Performing precision restoration. Degradation before: 0.000001773767370. After: 0.000000000000076
+High degradation found!
+Performing precision restoration. Degradation before: 0.912327552610268. After: 0.000000000107419
+MalformedBasisException caught!
+Performing precision restoration. Degradation before: 0.000005973935041. After: 0.000000000000835
+High degradation found!
+Performing precision restoration. Degradation before: 96.695498393230935. After: 0.000000000211857
+MalformedBasisException caught!
+Performing precision restoration. Degradation before: 0.000005017583877. After: 0.000000000000835
+MalformedBasisException caught!
+Performing precision restoration. Degradation before: 0.000002100080669. After: 0.000000000000182
+MalformedBasisException caught!
+Performing precision restoration. Degradation before: 0.000000273664915. After: 0.000000000000076
+High degradation found!
+Performing precision restoration. Degradation before: 0.158945004608499. After: 0.000000000237704
+MalformedBasisException caught!
+Performing precision restoration. Degradation before: 0.000016693166513. After: 0.000000000000810
+MalformedBasisException caught!
+Performing precision restoration. Degradation before: 0.000030627563190. After: 0.000000000000081
+MalformedBasisException caught!
+Performing precision restoration. Degradation before: 0.000068234330502. After: 0.000000000000081
+MalformedBasisException caught!
+Performing precision restoration. Degradation before: 0.000002757701577. After: 0.000000000000075
+MalformedBasisException caught!
+Performing precision restoration. Degradation before: 0.000028330020122. After: 0.000000000000073
+Performing precision restoration. Degradation before: 0.098252686903434. After: 0.000000000021826
+MalformedBasisException caught!
+Performing precision restoration. Degradation before: 0.000010303786570. After: 0.000000000000104
+High degradation found!
+Performing precision restoration. Degradation before: 0.361887980127356. After: 0.000000000034062
+
+
+Engine: quitting due to timeout...
+
+Final statistics:
+
+15:37:26 Statistics update:
+	--- Time Statistics ---
+	Total time elapsed: 3600010 milli (01:00:00)
+		Main loop: 3599004 milli (00:59:59)
+		Preprocessing time: 44 milli (00:00:00)
+		Unknown: 961 milli (00:00:00)
+	Breakdown for main loop:
+		[67.49%] Simplex steps: 2429065 milli
+		[23.72%] Explicit-basis bound tightening: 853714 milli
+		[0.00%] Constraint-matrix bound tightening: 0 milli
+		[0.19%] Degradation checking: 6832 milli
+		[0.01%] Precision restoration: 497 milli
+		[0.08%] Statistics handling: 2760 milli
+		[0.00%] Constraint-fixing steps: 0 milli
+		[0.04%] Valid case splits: 1573 milli. Average per split: 0.00 milli
+		[0.00%] Applying stored bound-tightening: 176 milli
+		[0.57%] SMT core: 20594 milli
+		[5.58%] Symbolic Bound Tightening: 200728 milli
+		[47.28%] SoI-based local search: 1701639 milli
+		[0.00%] SoI-based local search: 0 milli
+		[2.31%] Unaccounted for: 83061 milli
+	--- Preprocessor Statistics ---
+	Number of preprocessor bound-tightening loop iterations: 9
+	Number of eliminated variables: 0
+	Number of constraints removed due to variable elimination: 0
+	Number of equations removed due to variable elimination: 0
+	--- Engine Statistics ---
+	Number of main loop iterations: 3439936
+		3404312 iterations were simplex steps. Total time: 2429065 milli. Average: 0.71 milli.
+		0 iterations were constraint-fixing steps. Total time: 0 milli. Average: 0.00 milli
+	Number of active piecewise-linear constraints: 133 / 300
+		Constraints disabled by valid splits: 122. By SMT-originated splits: 45
+	Last reported degradation: 0.0000000000. Max degradation so far: 147.9818676193. Restorations so far: 61
+	Number of simplex pivots we attempted to skip because of instability: 16838.
+	Unstable pivots performed anyway: 188
+	--- Tableau Statistics ---
+	Total number of pivots performed: 3228800
+		Real pivots: 3216020. Degenerate: 12780 (0.40%)
+		Degenerate pivots by request (e.g., to fix a PL constraint): 0 (0.00%)
+		Average time per pivot: 0.09 milli
+	Total number of fake pivots performed: 110789
+	Total number of rows added: 0. Number of merged columns: 0
+	Current tableau dimensions: M = 605, N = 1520
+	--- SMT Core Statistics ---
+	Total depth is 49. Total visited states: 25905. Number of splits: 12973. Number of pops: 12931
+	Max stack depth: 83
+	--- Bound Tightening Statistics ---
+	Number of tightened bounds: 4593231.
+		Number of rows examined by row tightener: 3228800. Consequent tightenings: 141061
+		Number of explicit basis matrices examined by row tightener: 18932. Consequent tightenings: 266620
+		Number of bound tightening rounds on the entire constraint matrix: 0. Consequent tightenings: 0
+		Number of bound notifications sent to PL constraints: 8039531. Tightenings proposed: 0
+	--- Basis Factorization statistics ---
+	Number of basis refactorizations: 29772
+	--- Projected Steepest Edge Statistics ---
+	Number of iterations: 3356239.
+	Number of resets to reference space: 13730. Avg. iterations per reset: 244
+	--- SBT ---
+	Number of tightened bounds: 4408544
+	--- SoI-based local search ---
+	Number of proposed phase pattern update: 14046. Number of accepted update: 26152 [186.19%]
+	Total time (% of local search time) updating SoI phase pattern : 2313985 milli [0.14%]
+	Total time obtaining current assignment: 4811472 milli [0.28%]
+	Total time getting SoI phase pattern : 1515928 milli [0.04%]
+	--- Context dependent statistics ---
+	Number of pushes / pops: 25904 / 25855
+		[0.02%] Pre-Push hook: 807 milli
+		[0.00%] Push : 0 milli
+		[0.03%] Post-Pop hook: 1025 milli
+		[0.03%] Pop : 998 milli
+		[0.08%] Total context-switching time: 2831 milli
+	--- Proof Certificate ---
+	Number of certified leaves: 0
+	Number of leaves to delegate: 0
+	Number of lemmas: 0
+Timeout
+end run time: 15:37:26

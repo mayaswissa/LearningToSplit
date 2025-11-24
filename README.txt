@@ -1,0 +1,2 @@
+The networks used in this work are from the ACAS-Xu benchmark (45 networks) and are publicly available (see [link/citation]).
+The additional environment-robustness properties we generated for this study are included in the repository under properties/robustness/. The baseline results were generated using Marabou, and our results are reported in results/.
