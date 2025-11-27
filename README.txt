@@ -18,16 +18,6 @@ Benchmarks:
    - Three epsilon values: 0.08, 0.09, 0.1
    - 3000 total verification queries
 
-Training Procedure:
-A separate reinforcement learning agent is trained for each of the two
-experimental setups (safety properties and robustness properties).
-
-Training follows the setup described in the paper:
-- 5 epochs of DQfD (1000 steps each)
-- 40 epochs of Double DQN (1000 steps each)
-- Approximately 45,000 splitting steps in total
-- Training performed on single-CPU machines (Debian 12, 2GB RAM)
-
 Running the Code:
 The enhanced version of Marabou with RL support is executed with the following
 command structure:
